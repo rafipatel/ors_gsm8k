@@ -16,7 +16,10 @@ class AnswerParams(BaseModel):
 
 train_tasks = pd.read_parquet("/orwd_data/train-00000-of-00001.parquet").to_dict(orient="records")
 test_tasks = pd.read_parquet("/orwd_data/test-00000-of-00001.parquet").to_dict(orient="records")
-
+# train_tasks = pd.read_parquet("train-00000-of-00001.parquet").to_dict(orient="records")
+# test_tasks = pd.read_parquet("test-00000-of-00001.parquet").to_dict(orient="records")
+# print(train_tasks.keys())
+print(train_tasks[0:2])
 for i, task in enumerate(train_tasks):
     task['id'] = str(i)
 for i, task in enumerate(test_tasks):
