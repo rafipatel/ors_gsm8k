@@ -1,3 +1,6 @@
 fastapi>=0.115.12
-uvicorn>=0.34.3
 openreward
+pandas
+pyarrow
+uvicorn>=0.34.3
+math-verify[antlr4_13_2]
